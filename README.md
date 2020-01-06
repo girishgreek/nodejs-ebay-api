@@ -1,9 +1,9 @@
 eBay API client for Node.js
 ===============
 
-[![Build Status](https://travis-ci.org/benbuckman/nodejs-ebay-api.svg)](https://travis-ci.org/benbuckman/nodejs-ebay-api)
+[![Build Status](https://travis-ci.com/girishgreek/nodejs-ebay-api.svg)](https://travis-ci.com/girishgreek/nodejs-ebay-api)
 
-**I am not maintaining this module anymore. If anyone has an active fork and is interested in taking this over, please let me know and I will transfer the NPM project.**
+**[Ben Buckman](https://github.com/benbuckman) is not maintaining this module anymore. If anyone has an active fork and is interested in taking this over, please let him know and he will transfer the NPM project.**
 
 ## Intro
 
@@ -15,24 +15,24 @@ eBay's APIs are primarily XML-based, so this module unfortunately has to do a lo
 
 ### History
 
-1. I created this module in 2012, for one of the first Node.js apps I ever launched,
-  and built it out enough to handle my use cases at the time.
-2. Since then, [several other people][network] have contributed to the module.
-3. I decided, after reviewing the alternatives and finding nothing better,
-  to revive this module again for a project in October 2015. I've pulled in improvements from various forks,
+1. [He](https://github.com/benbuckman) created this module in 2012, for one of the first Node.js apps he ever launched,
+  and built it out enough to handle his use cases at the time.
+2. Since then, [several other people](https://github.com/benbuckman/nodejs-ebay-api/network) have contributed to the module.
+3. He decided, after reviewing the alternatives and finding nothing better,
+  to revive this module again for a project in October 2015. He has pulled in improvements from various forks,
   refactored most of the code, and started adding tests.  
   It is possible that in adding support for new APIs/endpoints, others that used to work no longer work.
 
-I don't have time to build this out to support every endpoint, so 
+He doesn't have time to build this out to support every endpoint, so 
 **if you are using this module, or would like to use this module, please submit pull requests!**
 
 
 ### Current state
 
 The 1.x branch is currently under active development, and there may be breaking changes between minor releases.  
-(I realize this is contrary to best practice, but the module is not yet settled enough to major-bump every time.)
+(He realize this is contrary to best practice, but the module is not yet settled enough to major-bump every time.)
 
-**If you are using the 1.x branch, I recommend that you a) let me know your use case, b) help develop it, 
+**If you are using the 1.x branch, he recommend that you a) let him know your use case, b) help develop it, 
 c) watch the commit and release logs carefully.**
 
 
@@ -42,7 +42,7 @@ c) watch the commit and release logs carefully.**
 
 `var ebay = require('ebay-api');`
 
-(See the [examples][examples])
+(See the [examples](examples))
 
 
 ## A word on the eBay APIs
@@ -71,8 +71,8 @@ Makes an XML POST to an eBay API endpoints.
 
 and can optionally contain:
 
-  - `params`: (see [examples][examples] and API documentation)
-  - `reqOptions`: passed to the [request][request] module, 
+  - `params`: (see [examples](examples) and API documentation)
+  - `reqOptions`: passed to the [request](https://www.npmjs.com/package/request) module, 
     e.g. for additional `headers`, or `timeout`.
   - `xmlConverter`: function which takes the response XML and converts to JSON. 
     _Module uses [xml2js](https://www.npmjs.com/package/xml2js) by default, but can be overridden._
@@ -142,9 +142,9 @@ and http://developer.ebay.com/devzone/xml/docs/Reference/ebay/Errors/ErrorMessag
 
 ## Examples
 
-See the [examples][examples] directory.
+See the [examples](examples) directory.
 To run the examples, you need to add your own app key (I don't want my keys to be disabled for abuse!) - 
-you can get one [here](https://publisher.ebaypartnernetwork.com/PublisherToolsAPI).
+you can get one [here](https://developer.ebay.com/signin).
 
 
 ## Debugging
@@ -155,7 +155,3 @@ Run your app (or node REPL) with `DEBUG=ebay* ...` to see output.
 
 
 Enjoy!
-
-[network]: https://github.com/benbuckman/nodejs-ebay-api/network
-[examples]: https://github.com/benbuckman/nodejs-ebay-api/tree/master/examples
-[request]: https://github.com/request/request
